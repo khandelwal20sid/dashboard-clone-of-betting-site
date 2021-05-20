@@ -1,0 +1,605 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Task: Matches</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+</head>
+
+<body>
+  <div class="body">
+
+    <!-- sidebar -->
+    <div class="sidebar px-3 py-3" id="sidebar">  
+
+      <!-- toggle btn -->
+      <div class="toggle-btn" id="toggleOpen" onclick="openSidebar()">     
+          <i class="fa fa-bars"></i>          
+      </div>
+      <div class="toggle-btn" id="toggleClose" onclick="closeSidebar()">     
+        <i class="fa fa-times" aria-hidden="true"></i>          
+      </div>
+
+      <!-- links -->
+      <div class="py-3 border-top">
+        <a href="#"><i class="fa fa-th-large" aria-hidden="true"></i><span>Dashboard</span></a>
+        <a href="#"><i class="fab fa-youtube"></i><span>Videos</span></a>
+        <a href="#"><i class="fa fa-star" aria-hidden="true"></i><span>Star Performer</span></a>
+      </div>
+
+      <div class="py-3 border-top">
+        <a href="#" style="color: #613be7;"><i class="fas fa-futbol"></i><span>Football</span></a>
+        <a href="#"><i class="fas fa-football-ball"></i><span>Handball</span></a>
+        <a href="#"><i class="fas fa-dice-two"></i><span>Dice</span></a>
+        <a href="#"><i class="fas fa-swimmer"></i><span>Swimming</span></a>
+        <a href="#"><i class="fas fa-volleyball-ball"></i><span>Vollyball</span></a>
+        <a href="#"><i class="fas fa-table-tennis"></i><span>Table Tennis</span></a>
+        <a href="#"><i class="fas fa-biking"></i><span>Biking</span></a>
+        <a href="#"><i class="fas fa-gamepad"></i><span>Online</span></a>      
+        <a href="#"><i class="fas fa-bullseye"></i></i><span>Bow Arrow</span></a>
+      </div>
+
+      <div class="mt-4" style="width: 100%;">
+        <div class="power-btn">
+          <i class="fa fa-power-off" aria-hidden="true"></i>
+        </div>
+      </div>    
+    </div>
+
+    <!-- main-area -->
+    <div class="main-area ">
+      <div style="position: relative;">
+
+         <!-- navbar -->
+          <div class="row py-2 nav align-content-center d-flex justify-content-around bg-white border-bottom">
+            <div class="col-9 py-2">        
+              <div class="nav-links d-flex">
+                <button id="toggleOpen-nav" onclick="openSidebar()"><i class="fa fa-bars"></i></button>               
+                <a style="color: #613be7;" href="#">Matches</a>
+                <a href="#">Live Score</a>
+                <a href="#">Statistics</a>
+                <a href="#">Analitics</a>
+                <a href="#">Forecasts</a>
+              </div>                
+            </div>
+            <div class="col-3 d-flex justify-content-around">
+              <div class="bell-icon my-2 px-3 mr-4 nav-hide"><i class="fa fa-bell" aria-hidden="true"></i></div>
+              <div><img src="img\Rectangle -2.png" class="profile-pic" alt=""></div>
+              <div class="d-flex">
+                <div class="pr-2 nav-hide">
+                  <div><h6 style="margin: 0;" class="text-muted">Linette Simmons</h6></div>
+                  <div class="d-flex justify-content-around">
+                    <div class="pr-3"><h6>18232.23$</h6></div>
+                    <div class="text-muted" style="font-size: 12px; margin-top: 2px;">6385PLN</div>              
+                  </div>                           
+                </div> 
+
+                <div class="dropdown">
+                  <button class="btn-sm bg-white text-muted dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Wallet</a>
+                    <a class="dropdown-item" href="#">Log out</a>
+                  </div>
+                </div> 
+              </div>
+                     
+            </div>
+          </div>
+
+          <!-- main-content -->
+          <div class="container-fluid">
+            <div class="row">
+
+              <!-- col-1 -->
+              <div class="col-12 col-lg-3 px-3 pt-4">
+                
+                <!-- card-1 -->
+                <div class="row pb-2">
+                  <div class="col-12">
+                    <div class="card pt-3">
+
+                      <div class="d-flex justify-content-between px-3">
+                        <div>
+                          <div><h6 class="card-h6-text">UEFA Champions League</h6></div>
+                          <div class="text-muted card-lead-text">Group stage - Matchday 2 of 6</div>
+                        </div>
+                        <div class="d-flex px-2 align-content-center card-1-live-btn">
+                          <div><i class="fab fa-youtube pr-1"></i></div>
+                          <div><small>Live</small></div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex justify-content-between py-3 px-3 card-1-scorecard">
+                        <div class="text-center">
+                          <div><img src="img/barcelona.png" alt=""></div>
+                          <div><h6 class="card-h6-text pt-1">Barcelona</h6></div>
+                        </div>
+                        <div class="text-center">
+                          <div><h2 style="margin: 0; letter-spacing: 10px;">2<span class="text-muted">:0</span></h2></div>
+                          <div><small class="text-muted">36'</small></div>
+                        </div>
+                        <div class="text-center">
+                          <div><img src="img/chelsea.png" alt=""></div>
+                          <div><h6 class="card-h6-text pt-1">Chelsea</h6></div>
+                        </div>
+                      </div>                      
+
+                      <div class="d-flex justify-content-between px-4 pb-3">
+                        <button type="button" class="btn-sm button-light"><i class="fa fa-star text-muted" aria-hidden="true"></i></button>
+                        <button type="button" class="btn-sm button-purple px-4 text-white">Bet</button>
+                        <button type="button" class="btn-sm button-light px-4 text-muted">Watch</button>
+                      </div>
+
+                      <div class="card-footer text-center py-1 bg-white" style="padding: 0; cursor: pointer;">
+                        <h6 class="text-muted"><small style="font-weight:500;">Match Details</small></h6>                        
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="row py-2">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between py-3">
+                      <div class="heads">Football Leagues</div>
+                      <div class="dropdown">
+                        <button class="btn-sm bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    
+                          <i class="fas fa-ellipsis-h text-muted"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">More</a>                          
+                        </div>
+                      </div>                      
+                    </div>
+
+                    <!-- table -->
+                    <div class="row py-1">
+                      <div class="col-12">
+                        <div class="card">
+
+                          <div class="d-flex justify-content-between border-bottom league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-1.png" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">Premier League</h6></div>
+                                <div class="card-lead-text text-muted">England</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">29</small></div>
+                          </div>
+
+                          <div class="d-flex justify-content-between border-bottom league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-2.png" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">Laliga</h6></div>
+                                <div class="card-lead-text text-muted">Barcelona</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">13</small></div>
+                          </div>
+
+                          <div class="d-flex justify-content-between border-bottom league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-3.png" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">The Football League</h6></div>
+                                <div class="card-lead-text text-muted">Spain</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">52</small></div>
+                          </div>
+
+                          <div class="d-flex justify-content-between border-bottom league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-4.svg" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">Football League - Lega 3</h6></div>
+                                <div class="card-lead-text text-muted">Indonesian</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">22</small></div>
+                          </div>
+
+                          <div class="d-flex justify-content-between border-bottom league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-5.svg" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">Italian Seria A</h6></div>
+                                <div class="card-lead-text text-muted">Juventus</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">16</small></div>
+                          </div>
+
+                          <div class="d-flex justify-content-between league-cards px-3 py-3">
+                            <div class="d-flex justify-content-between">
+                              <div class="league-img pr-2"><img src="img/league-6.png" alt=""></div>
+                              <div>
+                                <div><h6 class="card-h6-text">Bundesliga</h6></div>
+                                <div class="card-lead-text text-muted">Borussia Dortmund</div>
+                              </div>
+                            </div>
+                            <div><small class="text-muted">34</small></div>
+                          </div>    
+
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col-2 -->
+              <div class="col-12 col-lg-6 pt-4">
+                
+                <!-- card-1 -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card shadow card-purple py-4">
+                     <img class="player-img" src="img/player.png" alt="">
+                     <div class="purple-main-text pt-2 px-4">
+                       <h5>Win $100 000 with a Free Prediction</h5>
+                       <h6 class="purple-lead">Predict the first goal of two different teams in two selected matches and win up to $100 000.</h6>                       
+                       <button type="button" class="btn-sm mt-2 px-4 px-md-5 py-2">MORE DETAILS</button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card-2 -->
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between pt-4 pb-2">
+                      <div class="heads">Matches</div>
+                      <div class="dropdown">
+                        <button class="btn-sm bg-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                    
+                          <i class="fas fa-ellipsis-h text-muted"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">More</a>                          
+                        </div>
+                      </div>                       
+                    </div>
+
+                    <!-- table -->
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card matches-card">
+
+                          <div class="d-flex justify-content-between px-3 py-3">
+                            <div class="main-table-head">
+                              <a style="padding-left: 0; color: #613be7;" href="#">All Matches</a>
+                              <a href="#">Live Play</a>
+                              <a href="#">Completed</a>
+                              <a href="#">Scheduled</a>
+                            </div>
+                            <div class="match-cal"><i class="far fa-calendar text-code"></i></div>
+                          </div> 
+
+                          <div class="table-responsive-sm">
+                            <table class="table table-sm">
+                              <thead>
+                                <tr style="font-weight: 500;">
+                                  <td colspan="2" class="px-2 card-h6-text text-code py-2">Date</td>
+                                  <td colspan="5" class="text-center card-h6-text py-2 text-code">Match</td>
+                                  <td class="text-center card-h6-text text-code py-2">1x</td>
+                                  <td class="text-center card-h6-text text-code py-2">X</td>
+                                  <td class="text-center card-h6-text text-code py-2">2x</td>
+                                  <td> </td>                                 
+                                </tr>
+                              </thead>
+
+                              <tbody>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text text-muted px-1 py-2">8:00</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center w-50 live-btn my-1">
+                                      <div><i class="fas fa-circle pl-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Live</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Real Valladolid</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/real-valladolid.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">3:2</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/villarreal.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">Villarreal</h6></td>
+                                  <td class="pt-2"> <div class="math-table px-2" style="background-color: #a7e0d0; color: #30b08c;">1.63</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">2.13</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.82</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text text-muted px-1 py-2">9:30</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center w-50 live-btn my-1">
+                                      <div><i class="fas fa-circle pl-2 mt-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Live</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Qarabag FK</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/qarabag-fk.svg" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">1:0</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/nk-maribor.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">NK Maribor</h6></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.22</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.74</div></td>
+                                  <td class="pt-2"><div class="math-table px-2 mx-1 mx-md-2" style="background-color: #f0afb8; color: red;">2.55</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text px-1 text-muted py-2">10:45</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center my-1 card-status-btn">
+                                      <div><i id="status-today" class="fas fa-circle pl-2 px-2 mt-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Today</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Arsenal</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/arsenal.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">-:-</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/chelsea.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">Chelsea</h6></td>
+                                  <td class="pt-2"><div class="math-table px-2">5.37</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.10</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.86</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text px-1 text-muted py-2">12:00</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center card-status-btn my-1">
+                                      <div><i id="status-canceled" class="fas fa-circle pl-2 px-2 mt-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Canceled</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Everton</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/everton.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">-:-</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/liverpool.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">Liverpool</h6></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.48</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">2.84</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.73</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text px-1 text-muted py-2">-:-</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center card-status-btn my-1">
+                                      <div><i id="status-completed" class="fas fa-circle pl-2 px-2 mt-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Completed</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Villarreal</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/villarreal.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">-:-</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/nk-maribor.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">NK Maribor</h6></td>
+                                  <td class="pt-2"><div class="math-table px-2">3.61</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.26</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">2.12</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+
+                                <tr>
+                                  <td><h6 class="main-card-h6-text text-muted px-1 py-2">12:20</h6></td>
+                                  <td>
+                                    <div class="d-flex align-content-center card-status-btn my-1">
+                                      <div><i id="status-today" class="fas fa-circle pl-2 px-2 mt-2"></i></div>
+                                      <div class="match-status px-1 my-auto"><small>Today</small></div>
+                                    </div>
+                                  </td>
+                                  <td class="text-right"><h6 class="main-card-h6-text main-card-hide py-2">Girona FC</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/girona-fc.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text px-1 py-2">-:-</h6></td>
+                                  <td><img class="team-icon px-md-1" src="img/real-madrid.png" alt=""></td>
+                                  <td><h6 class="main-card-h6-text main-card-hide py-2">Real Madrid</h6></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.49</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">2.31</div></td>
+                                  <td class="pt-2"><div class="math-table px-2">1.88</div></td>
+                                  <td class="pt-2"><div class="math-table px-2"><i class="far fa-chart-bar"></i></div></td>
+                                </tr>
+              
+                                                               
+                              </tbody>
+                            </table>
+                          </div>                          
+
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- col-3 -->
+              <div class="col-12 col-lg-3 py-3 bg-light h-100">
+                
+                <div class="row pb-3">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between px-3" style="color: #959ba3;">
+                      <div class="heads">Invoice for payment</div>
+                      <div><i class="fas fa-times"></i></div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- invoice -->
+                <div class="row bg-white mx-2 invoice">
+                  <div class="col-12 border">
+                    
+                    <div class="row py-3">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-around border-dashed py-2">
+                          <div class="heads">Simple</div>
+                          <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                          </div>
+                          <div class="heads text-code">Combo</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row px-2">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex justify-content-between align-content-center text-center">
+                            <div class="px-1"><h6 class="card-h6-text margin-top">Qarabag FK</h6></div>
+                            <div class="card-h6-text text-code margin-top px-1">vs</div>
+                            <div class="px-1"><i class="fas fa-clock text-code card-lead-text"></i></div>
+                            <div class="px-1"><h6 class="card-h6-text margin-top">Nk Maribor</h6></div>
+                          </div>
+                          <div class="circular-back margin-top"><i class="fas circular-icon fa-times "></i></div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 ml-2 mb-1">
+                        <div class="card-h6-text text-code">Winner</div>
+                      </div>
+                    </div>
+
+                    <div class="row px-4">
+                      <div class="col-12 py-2 mb-3" style="background-color: #e7e8ef;">
+                        <div class="d-flex justify-content-between ">
+                          <div><h6 class="card-h6-text margin-top px-1" style="color: #613be7; font-weight: 500;">Qarabag FK</h6></div>
+                          <div class="math-table px-2 pt-1" style="background-color: #613be7; color: #fff;height: 25px;">1.22</div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                    <div class="border-dashed w-100 py-2"></div>
+                    
+
+                    <div class="row py-4">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between px-2">
+                          <div class="invoice-box mr-1 px-3"><h6 class="card-h6-text text-muted" style="margin-top:8px;">1$</h6></div>
+                          <div class="invoice-box px-3" style="border: 2px solid grey;"><h6 class="card-h6-text" style="margin-top:8px; color: #613be7;">2$</h6></div>
+                          <div class="invoice-box mx-1 px-3"><h6 class="card-h6-text text-muted" style="margin-top:8px;">5$</h6></div>
+                          <div class="invoice-box pr-4 px-1"><h6 class="card-h6-text text-muted" style="margin-top:8px;">20$</h6></div>   
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row ">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-between">
+                          <div><h6 class="card-h6-text text-code">More options</h6></div>
+                          <div class="circular-back margin-top"><i class="fas circular-icon fa-info" style="right: 35%;"></i></div>
+                        </div>
+                      </div>                      
+                    </div>
+
+                    <div class="row py-2">
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">
+                            <h6 class="card-h6-text text-muted">Accept rules of the agreement</h6>                           
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox">
+                          <label class="form-check-label">
+                            <h6 class="card-h6-text text-muted">Accept any odds changes</h6>                           
+                          </label>
+                        </div>                        
+                      </div>
+                    </div>
+
+                    <div class="row py-2">
+                      <div class="col-12">
+                        <div class="d-flex justify-content-around">
+                          <div>
+                            <div><h6 class="card-h6-text pb-2">Total rate</h6></div>
+                            <div class="math-table px-2 w-75 text-center" style="background-color: #613be7; color: #fff; height: 25px;">1.22</div>
+                          </div>
+                          <div style="width: 1px; background-color: #434a49; height: 50px;"></div>
+                          <div>
+                            <div><h6 class="card-h6-text pb-1">Possible winnings</h6></div>
+                            <div><h4 style="color: #76c2ae;">735,48$</h4></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row" style="background-color:#e7e8ef;">
+                    <div class="col-12 py-4 text-center">
+                      <button type="button" class="btn button-purple text-light py-2 px-5"><h6 class="card-h6-text">Place a Bet</h6></button>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row mt-4 border-top">
+                  <div class="col-12 py-4">
+                    <div class="d-flex justify-content-center shadow-sm text-code tech-support mx-auto py-3 w-75">
+                      <i class="fas fa-headphones-alt pr-4"></i>
+                      <h6 class="card-h6-text">Technical Support 24/7</h6>
+                    </div>
+                  </div>
+                </div>
+              
+
+              </div>
+            </div>
+          </div>
+
+
+          
+      </div>            
+    </div>
+
+  </div>
+
+ <!-- scripts -->
+ <script>
+   function openSidebar() {         
+         document.getElementById('sidebar').classList.add('toggle')        
+         console.log("open");
+     }
+
+     function closeSidebar() {         
+         document.getElementById('sidebar').classList.remove('toggle')        
+         console.log("open");
+     }
+ </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
